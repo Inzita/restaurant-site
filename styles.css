@@ -220,7 +220,6 @@ padding-bottom: 2rem;
 }
 
 .hand-made-img{
-    width: 40%;
     background: url('./images/7.png');
     width: 90%;
     height: 600px;
@@ -328,6 +327,20 @@ padding-bottom: 2rem;
     .lemon-text p {
     width: 100%;
     text-align: left;
+    }
+    .hand-made {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .hand-made-text {
+        width: 100%;
+    }
+
+    .hand-made-img {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
 }
