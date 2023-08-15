@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --nav:whitesmoke;
+    --nav-text:maroon;
+    --text-color:aliceblue;
+    --faint-text:rgb(110, 109, 109);
+    --nav-hover:rgb(37, 36, 36);
+    --mobile-nav:black;
+    --paragraph-text:rgb(163, 112, 112);
+}
+
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,
+    sans-serif;
+    
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    background: whitesmoke;
+    padding: 1.5rem;
+}
+h1 {
+    background: var(--nav-text);
+    font-size: 1.5rem;
+
+}
+h2{
+    font-family: 'Rubik', sans-serif;
+    color: var(--nav-text);
+}
+p{
+    color: rgb(163, 112, 112);
+    font-size: 1.1rem;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    margin-right: 0.5rem;
+        
+}
+ul li{ 
+    list-style: none;
+    
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+ul li a{
+    color: maroon;
+    font-weight: 600;
+}
+
+.mobile{
+    display: none;
+}
+.logo {
+    border-radius: 10px;
+    padding: 1rem;
+    margin-left: 0.6rem;
+    margin-top: 0.2rem;
+    position: static;
+
+}
+.bar{
+    display: none;
+}
+.num a{
+    color: aliceblue;
+    background: maroon;
+    padding: 0.5rem;
+}
+img {
+    object-fit: cover;
+}
+.good-food{
+    background: url('./images/proto2.png');
+    background-size: cover;
+    display: flex;
+
+    
+}
+.good-food-div{
+    margin: 10rem 1rem 10rem 2rem;
+}
+.header1{
+    width: 45%;
+    font-size: 3rem;
+    color:var(--nav-text);
+    padding-bottom: 2rem;
+}
+.paragraph1{
+width:45% ;
+color: rgb(163, 112, 112);
+font-size: 1.1rem;
+padding-bottom: 2rem;
+}
+.order{
+    padding: 0.9rem 1.6rem;
+    background: var(--nav-text);
+    color: aliceblue;
+    font-weight: bold;
+    border: 1px solid var(--nav-text);
+    margin-right:1rem ;
+}
+.learn{
+    padding: 0.9rem 1.6rem;
+    color:var(--nav-text);
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+}
+.order:hover{
+    border: 3px solid var(--nav-text); 
+    background: white;
+    color: var(--nav-text);
+}
+.learn:hover{
+    border: 3px solid var(--nav-text);
+}
+.basket:hover{
+    color: var(--nav-text);
+
+}
+.numbers{
+    width: 100%;
+    background: var(--nav-text);
+    padding: 2.4rem;
+    margin-bottom: 2rem;
+}
+.numbers ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10rem;
+    
+
+}
+.numbers ul li{
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: 'Rubik', sans-serif;
+}
+.number-text{
+    font-family: "Helvetica Neue", Helvetica, Arial,
+            sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.lemon{
+    display: flex;
+    flex-direction: row;
+    margin: 4rem;
+    gap: 3rem;
+}
+.lemon-img-div{
+    /* margin: 2rem; */
+    width: 90%;
+    height: 400px;
+    border-radius: 1rem;
+    background: url('./images/4.png');
+    background-size: cover;
+
+
+}
+.lemon-text{
+    width: 70%;
+}
+.lemon-text h2{
+    font-size: 2rem;
+    width: 70%;
+    margin-bottom: 2rem;
+}
+.lemon-text p{
+    width: 70%;
+    margin-bottom: 2rem;
+}
+.learn2{
+    padding: 0.9rem 1.6rem;
+    background: var(--nav-text);
+    display: flex;
+    color: aliceblue;
+    font-weight: bold;
+    border: 1px solid var(--nav-text);
+    margin-right: 1rem;
+    }
+.learn2:hover{
+    border: 3px solid var(--nav-text);
+    background: white;
+    color: var(--nav-text);
+}
+.hand-made{
+    display: flex;
+    flex-direction: row;
+    margin: 6rem 0 0  4rem;
+    gap: 3rem;
+}
+.hand-made-text{
+    width: 60%;
+}
+.hand-made-text h2{
+    margin-top: 3rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.hand-made-text p{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.hand-made-img{
+    width: 40%;
+    background: url('./images/7.png');
+    width: 90%;
+    height: 600px;
+    border-radius: 1rem;
+    background-size: cover;
+}
+
+
+
+@media(max-width:768px){
+    ul{
+        display: none;
+    }
+    .mobile {
+        display: block;
+        position: absolute;
+        top: 7rem;
+        width: 100%;
+        margin-left: -1.5rem;
+        display: none;
+        }
+    .mobile li{
+        padding:0.7rem;
+        font-size: 1.4rem;
+        padding-left: 1.9rem;
+        background:black;
+    }
+    .bar{
+        display:flex;
+        align-items: center;
+        font-size: 2rem;
+        
+    }
+    
+    .header1 {
+        width: 100%;
+        font-size: 2rem;
+
+    }
+    .paragraph1 {
+        width: 90%;
+        color: rgb(131, 26, 26);
+        font-size: 1.1rem;
+        padding-bottom: 2rem;
+    }
+    .numbers ul li{
+        font-size:1.2rem ;
+    }
+    .numbers ul{
+        gap:2rem;
+    }
+    .number-text {
+        font-size: 0.8rem;
+    }
+    .lemon {
+    flex-direction: column;
+    margin: 1rem;
+    }
+
+    .lemon-img-div {
+    width: 100%;
+    }
+
+    .lemon-text {
+    width: 100%;
+    }
+
+    .lemon-text h2 {
+    width: 100%;
+    text-align: left;
+    }
+
+    .lemon-text p {
+    width: 100%;
+    text-align: left;
+    }
+
+}
+@media(min-width:769px) and (max-width:1020px){
+    h1{
+        font-size:0.3rem ;
+
+    }
+        .logo {
+            padding: 0.7rem;
+            font-size: 1.2rem;
+            margin-left: 0.3rem;
+        
+    
+        }
+        ul {
+            gap: 1.2rem;
+            margin-right: 0.5rem;
+        
+        }
+        .paragraph1 {
+            color: rgb(131, 26, 26);
+        }
+        .numbers ul li {
+            font-size: 1.7rem;
+        }
+        
+        .numbers ul {
+            gap: 6rem;
+        }
+
+
+        .lemon {
+            margin: 3rem;
+            gap: 2rem;
+        }
+
+        .lemon-div {
+            width: 100%;
+        }
+
+        .lemon-text {
+            width: 100%;
+        }
+
+        .lemon-text h2 {
+            font-size: 2rem;
+            width: 100%;
+        }
+
+        .lemon-text p {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+}
+
+
