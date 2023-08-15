@@ -261,28 +261,28 @@ padding-bottom: 2rem;
 .man{
     background: url('./images/cobs2.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     padding: 150px;
     display:flex;
 
     
 }
-.man-text{
-}
 .man-text h2{
     font-size: 2rem;
     display: flex;
     padding:0 10rem;
     text-align: center;
+    margin-bottom: 1.5rem;
     
 }
 .man-text p{
     display: flex;
     text-align: center;
-    padding: 0 10rem;
-    
+    padding: 0 14rem;  
 
 }
+.video-link
 
 
 
