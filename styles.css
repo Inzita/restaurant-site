@@ -395,6 +395,20 @@ padding-bottom: 2rem;
             width: 100%;
             margin-bottom: 2rem;
         }
+                .hand-made {
+                    margin: 1rem;
+                }
+        
+                .hand-made-text {
+                    width: 100%;
+                }
+        
+                .hand-made-img {
+                    width: 100%;
+                    margin-top: 7rem;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
 }
 
 
