@@ -259,22 +259,28 @@ padding-bottom: 2rem;
     color: var(--nav-text);
 }
 .man{
-    background: url('./images/cobs.jpg');
-    background-size: auto;
-    background-position: center;
+    background: url('./images/cobs2.jpg');
+    background-size: cover;
     width: 100%;
-    padding: 100px;
+    padding: 150px;
     display:flex;
 
     
 }
+.man-text{
+}
 .man-text h2{
     font-size: 2rem;
     display: flex;
-    justify-content: center;
+    padding:0 10rem;
     text-align: center;
+    
 }
 .man-text p{
+    display: flex;
+    text-align: center;
+    padding: 0 10rem;
+    
 
 }
 
