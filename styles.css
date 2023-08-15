@@ -258,6 +258,26 @@ padding-bottom: 2rem;
     background: white;
     color: var(--nav-text);
 }
+.man{
+    background: url('./images/cobs.jpg');
+    background-size: auto;
+    background-position: center;
+    width: 100%;
+    padding: 100px;
+    display:flex;
+
+    
+}
+.man-text h2{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.man-text p{
+
+}
+
 
 
 
