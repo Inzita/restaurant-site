@@ -298,7 +298,6 @@ padding-bottom: 2rem;
 }
 .meals{
     display: flex;
-    flex-wrap: wrap;
     gap: 3rem;
 }
 .explore h2{
@@ -347,7 +346,6 @@ font-size: 1.1rem;
 }
 .slideshow-container{
     margin-top: 5rem;
-    position: relative;
     background:var(--nav-text);
     height: 100vh;
     
@@ -388,27 +386,6 @@ font-size: 1.1rem;
     font-size: 1.1rem;
     padding-bottom: 2rem;
 }
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    color: var(--nav-text);
-    font-weight: bold;
-    font-size: 2rem;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-.prev{
-    left: 10rem;
-}
-.next {
-    position: absolute;
-    right: 10rem;
-    border-radius: 3px 0 0 3px;
-}
 .dot-container {
     text-align: center;
     width: 80%;
@@ -430,6 +407,7 @@ font-size: 1.1rem;
 .dot:hover {
     background-color: #717171;
 }
+
 
 
 
@@ -568,9 +546,12 @@ font-size: 1.1rem;
         .image-text {
             width: 30%;
         }
+        .meals{
+            flex-direction: column;
+        }
     .explore-div{
         padding: 0 1rem;
-        flex-direction: column;
+
     }
 
         .image-text {
@@ -612,6 +593,24 @@ font-size: 1.1rem;
             border: 3px solid var(--nav-text);
             background: white;
             color: var(--nav-text);
+        }
+
+
+        .mySlides p {
+            text-align: left;
+            padding: 0 1rem;
+            font-size: 1.1rem;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 30px;
+            width: 30px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
         }
     
 
