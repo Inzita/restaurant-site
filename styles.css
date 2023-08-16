@@ -293,8 +293,12 @@ padding-bottom: 2rem;
 .explore-div
 {
     padding: 0 4rem ;
+    
+}
+.meals{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 .explore h2{
     padding-top: 5rem;
@@ -491,6 +495,7 @@ font-size: 1.1rem;
             width: 22rem;
             border-radius: 0.5rem;
             display: flex;
+
         }
     
         .price h4 {
