@@ -83,6 +83,7 @@ ul li a{
     color: aliceblue;
     background: maroon;
     padding: 0.3rem;
+    
 }
 img {
     object-fit: cover;
@@ -167,6 +168,7 @@ padding-bottom: 2rem;
     flex-direction: row;
     margin: 4rem;
     gap: 3rem;
+    padding-top: 6rem;
 }
 .lemon-img-div{
     width: 90%;
@@ -407,6 +409,50 @@ font-size: 1.1rem;
 .dot:hover {
     background-color: #717171;
 }
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -200px;
+    padding: 16px;
+    color: var(--nav-text);
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    display: none;
+}
+.next {
+    position: absolute;
+    right: 10rem;
+    border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 10rem;
+
+}
+.faq h2{
+    text-align: center;
+    margin: 5rem 0;
+}
+.faq-text{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: auto;
+}
+.faq-text h3{
+    color: var(--nav-text);
+}
+.faq-text p{
+    font-size: 1rem;
+}
+.faq-span{
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+}
+
 
 
 
@@ -594,25 +640,58 @@ font-size: 1.1rem;
             background: white;
             color: var(--nav-text);
         }
+        .slideshow-container {
+            height: 70vh;
+        }
+        .slideshow-container h2 {
+            padding: 2.5rem 0;
+
+        }
 
 
         .mySlides p {
             text-align: left;
             padding: 0 1rem;
             font-size: 1.1rem;
+            margin-left: 1.2rem;
         }
 
         .dot {
-            cursor: pointer;
-            height: 30px;
-            width: 30px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
+            display: none;
         }
-    
+        .prev,
+        .next {
+            display:block;
+        }
+
+        .next {
+            right: 2rem;
+        }
+
+        .prev {
+            left: 2rem;
+
+        }
+        .faq-text {
+            grid-template-columns: auto;
+            width:100%;
+            margin: auto;
+            padding-left: 2rem;
+        }
+
+        .faq-text h3 {
+            color: var(--nav-text);
+        }
+
+        .faq-text p {
+            font-size: 1rem;
+        }
+
+        .faq-span {
+            margin-bottom: 2rem;
+            padding-right: 2rem;
+        }
+
 
 
 }
