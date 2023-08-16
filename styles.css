@@ -31,7 +31,7 @@ h1 {
     background: var(--nav-text);
 
 }
-h2{
+h2, h4{
     font-family: 'Rubik', sans-serif;
     color: var(--nav-text);
 }
@@ -290,6 +290,12 @@ padding-bottom: 2rem;
 .play-paragraph a:hover{
     color: var(--nav-text);
 }
+.explore-div
+{
+    padding: 0 4rem ;
+    display: flex;
+    flex-direction: column;
+}
 .explore h2{
     padding-top: 5rem;
     font-size: 2rem;
@@ -303,7 +309,38 @@ padding-bottom: 2rem;
     font-size: 1rem;
     padding-bottom: 2rem;
 }
-    
+.image-text{
+    width: 30%;
+}
+.explore-img{
+    margin-top: 2rem;
+    width: 22rem;
+    border-radius: 0.5rem;
+}
+.price h4{
+font-size: 1.1rem;
+}
+.price h3{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.fade{
+    color: grey;
+    text-decoration: line-through;
+} 
+.price a{
+    padding: 0.9rem 1.6rem;
+    background: var(--nav-text);
+    color: aliceblue;
+    font-weight: bold;
+    border: 1px solid var(--nav-text);
+    margin-right: 1rem;
+} 
+.price a:hover {
+    border: 3px solid var(--nav-text);
+    background: white;
+    color: var(--nav-text);
+}
 
 
 
@@ -436,8 +473,55 @@ padding-bottom: 2rem;
         text-align: left;
         font-size: 1.1rem;
         margin-left: 1rem;
-        /* margin-bottom: 2rem; */
     }
+        .image-text {
+            width: 30%;
+        }
+    .explore-div{
+        padding: 0 1rem;
+        flex-direction: column;
+    }
+
+        .image-text {
+            width: 100%;
+        }
+    
+        .explore-img {
+            margin-top: 2rem;
+            width: 22rem;
+            border-radius: 0.5rem;
+            display: flex;
+        }
+    
+        .price h4 {
+            font-size: 1.1rem;
+        }
+    
+        .price h3 {
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+        }
+    
+        .fade {
+            color: grey;
+            text-decoration: line-through;
+        }
+    
+        .price a {
+            padding: 0.9rem 1.6rem;
+            background: var(--nav-text);
+            color: aliceblue;
+            font-weight: bold;
+            border: 1px solid var(--nav-text);
+            margin-right: 1rem;
+        }
+    
+        .price a:hover {
+            border: 3px solid var(--nav-text);
+            background: white;
+            color: var(--nav-text);
+        }
+    
 
 
 }
