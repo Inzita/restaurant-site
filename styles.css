@@ -8,7 +8,7 @@
 :root{
     --nav:whitesmoke;
     --nav-text:maroon;
-    --text-color:aliceblue;
+    --white:aliceblue;
     --faint-text:rgb(110, 109, 109);
     --nav-hover:rgb(37, 36, 36);
     --mobile-nav:black;
@@ -25,15 +25,19 @@ nav{
     display:flex;
     justify-content: space-between;
     background: whitesmoke;
-    padding: 1.5rem;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
 }
 h1 {
     background: var(--nav-text);
+    
 
 }
 h2, h4{
     font-family: 'Rubik', sans-serif;
     color: var(--nav-text);
+    font-size: 2rem;
 }
 p{
     color: rgb(163, 112, 112);
@@ -66,7 +70,7 @@ ul li a{
 }
 .logo {
     border-radius: 10px;
-    padding: 1rem;
+    padding: 0.4rem 1rem;
     margin-left: 0.6rem;
     margin-top: 0.2rem;
     position: static;
@@ -78,7 +82,7 @@ ul li a{
 .num a{
     color: aliceblue;
     background: maroon;
-    padding: 0.5rem;
+    padding: 0.3rem;
 }
 img {
     object-fit: cover;
@@ -177,7 +181,6 @@ padding-bottom: 2rem;
     width: 80%;
 }
 .lemon-text h2{
-    font-size: 2rem;
     width: 80%;
     margin-bottom: 2rem;
     padding-left: 3rem;
@@ -214,7 +217,6 @@ padding-bottom: 2rem;
 }
 .hand-made-text h2{
     margin-top: 3rem;
-    font-size: 2rem;
     margin-bottom: 2rem;
 }
 .hand-made-text p{
@@ -269,7 +271,6 @@ padding-bottom: 2rem;
 }
 .man-text h2{
     padding-top: 7rem;
-    font-size: 2rem;
     width: 40rem;
     margin-left: 3rem;
     text-align: center;
@@ -302,7 +303,6 @@ padding-bottom: 2rem;
 }
 .explore h2{
     padding-top: 5rem;
-    font-size: 2rem;
     text-align: center; 
     padding-bottom: 2rem; 
 
@@ -345,6 +345,93 @@ font-size: 1.1rem;
     background: white;
     color: var(--nav-text);
 }
+.slideshow-container{
+    margin-top: 5rem;
+    position: relative;
+    background:var(--nav-text);
+    height: 100vh;
+    
+}
+.slideshow-container h2{
+    color: var(--white);
+    padding: 5rem 0;
+    text-align: center;
+}
+.mySlides{
+    background: var(--white);
+    width: 80%;
+    border-radius: 1rem;
+    margin: auto;
+}
+.image2{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.profile-img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    
+}
+.mySlides p{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0 12rem;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+}
+.mySlides h5{
+    text-align: center;
+    color: var(--nav-text);
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: var(--nav-text);
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev{
+    left: 10rem;
+}
+.next {
+    position: absolute;
+    right: 10rem;
+    border-radius: 3px 0 0 3px;
+}
+.dot-container {
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    border-radius: 2rem;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
 
 
 
@@ -373,7 +460,7 @@ font-size: 1.1rem;
     .bar{
         display:flex;
         align-items: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         
     }
     
