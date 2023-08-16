@@ -268,7 +268,7 @@ padding-bottom: 2rem;
     justify-content: center;
 }
 .man-text h2{
-    padding-top: 10rem;
+    padding-top: 7rem;
     font-size: 2rem;
     width: 40rem;
     margin-left: 3rem;
@@ -280,7 +280,7 @@ padding-bottom: 2rem;
     width: 35rem;
     margin-left: 5rem;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 10rem;
 }
 .play-paragraph a{
     color: black;
@@ -289,6 +289,19 @@ padding-bottom: 2rem;
 }
 .play-paragraph a:hover{
     color: var(--nav-text);
+}
+.explore h2{
+    padding-top: 5rem;
+    font-size: 2rem;
+    text-align: center; 
+    padding-bottom: 2rem; 
+
+}
+.explore p{
+    padding: 0 12rem;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 2rem;
 }
     
 
@@ -399,7 +412,7 @@ padding-bottom: 2rem;
         font-size: 2rem;
         width:100%;
         margin-left:0;
-        text-align: left;
+        text-align: center;
         padding-bottom: 1.5rem;
 
     }
@@ -407,8 +420,23 @@ padding-bottom: 2rem;
     .man-text p {
         width: 100%;
         margin-left:0;
-        text-align: left;
+        text-align: center;
         padding-bottom: 2rem;
+    }
+    .explore h2 {
+        padding-top: 5rem;
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 2rem;
+
+    }
+
+    .explore p {
+        padding: 0;
+        text-align: left;
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        /* margin-bottom: 2rem; */
     }
 
 
