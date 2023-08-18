@@ -561,45 +561,53 @@ img {
     background: white;
     color: var(--nav-text);
 }
-.newsletter-email{
+
+.newsletter-email {
     width: 100%;
     padding-top: 7rem;
     display: flex;
     justify-content: center;
 }
-.newsletter h2{
+
+.newsletter h2 {
     width: 100%;
-    padding:0 20rem;
-    text-align: center; 
-}
-.newsletter p{
+    padding: 0 20rem;
     text-align: center;
-    padding:1rem 0;
 }
-.newsletter-email{
+
+.newsletter p {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.newsletter-email {
     width: 100%;
     padding-top: 7rem;
     display: flex;
     justify-content: center;
 }
-.newsletter h2{
+
+.newsletter h2 {
     width: 100%;
-    padding:0 20rem;
-    text-align: center; 
-}
-.newsletter p{
+    padding: 0 20rem;
     text-align: center;
-    padding:1rem 0;
-    padding-bottom:2rem;
 }
-.email-sub{
+
+.newsletter p {
+    text-align: center;
+    padding: 1rem 0;
+    padding-bottom: 2rem;
+}
+
+.email-sub {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     margin-bottom: 4rem;
 }
-#email{
+
+#email {
     padding: 0.5rem 1rem;
     outline: none;
     border: 0.1rem solid rgba(0, 0, 0, 0.5);
@@ -607,7 +615,8 @@ img {
     font-size: 1.1rem;
     font-weight: 600;
 }
-.sub{
+
+.sub {
     padding: 0.5rem 2rem;
     background: var(--nav-text);
     display: flex;
@@ -615,36 +624,56 @@ img {
     font-weight: bold;
     border: 1px solid var(--nav-text);
 }
-.sub:hover{
+
+.sub:hover {
     border: 3px solid var(--nav-text);
     background: white;
     color: var(--nav-text);
 }
-footer{
+footer {
     width: 100%;
     height: 200px;
     background: var(--nav-text);
 }
-.link-div{
+.footer-link {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
     padding-top: 3rem;
-    display: flex;
-    justify-content: center;
+
 }
-.link-div a{
-    color:var(--white);
-    font-size: 1.1rem;
+
+.link-div {
+    width: 100%;
 }
-.icon-div{
-    color:var(--white);
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    padding-top: 1.5rem;
-}
-footer p{
-    text-align: center;
-    padding: 2rem;
+
+.footer-link a {
     color: var(--white);
+    font-size: 1rem;
+}
+
+.icon-div {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-div p {
+    display: flex;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    gap: 2rem;
+    color: var(--white);
+}
+
+footer p {
+    text-align: center;
+    color: var(--white);
+    padding-top: .8rem;
+    font-size: 0.7rem;
+}
+
+#xmark {
+    display: none;
 }
 
 
@@ -676,7 +705,7 @@ footer p{
     }
 
     .mobile li {
-        padding: 0.7rem;
+        padding: 1rem;
         font-size: 1.4rem;
         padding-left: 1.9rem;
         background: black;
@@ -929,19 +958,23 @@ footer p{
         float: none;
         margin-top: 0.5rem;
     }
+
     .newsletter-email {
         padding-top: 4rem;
     }
+
     .newsletter h2 {
         font-size: 1.5rem;
-        padding: 0 2rem ;
+        padding: 0 2rem;
     }
+
     .newsletter p {
         text-align: center;
         justify-content: center;
         font-size: 1.2rem;
-        padding:0 2rem;
+        padding: 0 2rem;
     }
+
     .email-sub {
         width: 100%;
         display: flex;
@@ -979,23 +1012,32 @@ footer p{
         background: white;
         color: var(--nav-text);
     }
-    .footer-link{
+
+    .footer-link {
         display: flex;
+        width: 100%;
 
     }
-    .footer-link li a{
-        font-size: 1rem;
+
+    .footer-link li a {
+        font-size: .7rem;
     }
-    .icon-div ul{
+
+    .icon-div {
+        width: 100%;
+    }
+
+    .icon-div p {
         color: var(--white);
-        font-size: 0.9rem;
+        font-size: 0.6rem;
         display: flex;
         justify-content: center;
     }
 
     footer p {
         text-align: center;
-        padding: 1rem;
+        width: 100%;
+        padding: .3rem;
         color: var(--white);
     }
 
@@ -1206,6 +1248,7 @@ footer p{
         padding: 0.6rem 1.4rem;
         margin-top: -1.3rem;
     }
+
     .newsletter-email {
         padding-top: 4rem;
     }
@@ -1213,6 +1256,7 @@ footer p{
     .newsletter h2 {
         padding: 0 7rem;
     }
+
     .email-sub {
         width: 100%;
         display: flex;
